@@ -62,20 +62,19 @@ void PT_Attenuators(uint8_t Select_Speaker,uint8_t Attenuator,uint8_t Mute)
 	{
 		if(Mute)
 		{			
-					PT_data[2]=0xff; //SpkR ATT
-
+	           PT_data[2]=0xff; //SpkR ATT
 		}
 		else
 		{
-			if(Attenuator<0x1f)
-			{
-				PT_data[2]=Attenuator|0xe0; //SpkR ATT
+		    if(Attenuator<0x1f)
+		    {
+		    	PT_data[2]=Attenuator|0xe0; //SpkR ATT
 
-			}
-			else
-			{
-				PT_Error=1;
-			}
+		    }
+		    else
+		    {
+		    	PT_Error=1;
+		    }
 		}
 	}
 	
@@ -83,20 +82,19 @@ void PT_Attenuators(uint8_t Select_Speaker,uint8_t Attenuator,uint8_t Mute)
 	{
 		if(Mute)
 		{			
-					PT_data[1]=0xdf; //SpkL ATT
-
+		   PT_data[1]=0xdf; //SpkL ATT
 		}
 		else
 		{
-			if(Attenuator<0x1f)
-			{
-				PT_data[1]=Attenuator|0xc0; //SpkL ATT
+		   if(Attenuator<0x1f)
+		   {
+		   	PT_data[1]=Attenuator|0xc0; //SpkL ATT
 
-			}
-			else
-			{
-				PT_Error=1;
-			}
+		   }
+		   else
+		   {
+		   	PT_Error=1;
+		   }
 		}
 	}
 	
