@@ -92,13 +92,13 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
-	PT_Volume(63);
+  PT_Volume(63);
   PT_Select_Channel(PT_CH_1);
-	PT_Attenuators(Right_Speaker,0,Mute_OFF);
-	PT_Loadness(Loadness_ON);
-	PT_Set_Gain(Gain_11_25db);
-	PT_Attenuators(Left_Speaker,0,Mute_OFF);
-	PT_Set_Base_Treble(14,14); //Set Base and Treble in Middle
+  PT_Attenuators(Right_Speaker,0,Mute_OFF);
+  PT_Loadness(Loadness_ON);
+  PT_Set_Gain(Gain_11_25db);
+  PT_Attenuators(Left_Speaker,0,Mute_OFF);
+  PT_Set_Base_Treble(14,14); //Set Base and Treble in Middle
   PT_Update_Data();
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
